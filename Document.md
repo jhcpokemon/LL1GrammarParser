@@ -2,7 +2,6 @@ LL(1)语法解析器
 定义类
 <pre><code>
 Rule(String topInAnalyse,String topInEnter,String ruler)
-List<Rule> rules
 Rule("E","i","E→TE'")
 Rule("E","(","E→TE'")
 Rule("E'","+","E'→+TE'")
