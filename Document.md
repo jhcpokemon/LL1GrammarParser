@@ -2,6 +2,8 @@ LL(1)语法解析器
 定义类
 <pre><code>
 Rule(String topInAnalyse,String topInEnter,String ruler)
+List `<Rule>` rules
+给定的表为
 Rule("E","i","E→TE'")
 Rule("E","(","E→TE'")
 Rule("E'","+","E'→+TE'")
@@ -16,4 +18,3 @@ Rule("T'","#","T'→ε")
 Rule("F","i","F→i")
 Rule("F","(","F→(E)")
 </code></pre>
-给定的表为
