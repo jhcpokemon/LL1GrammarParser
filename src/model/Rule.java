@@ -25,21 +25,21 @@ public class Rule {
         return ruler;
     }
 
-    public ArrayList<Rule> getRules(){
+    public static ArrayList<Rule> getRules(){
         ArrayList<Rule> rules= new ArrayList<>();
-        rules.add(new Rule("E","i","E¡úTE'"));
-        rules.add(new Rule("E","(","E¡úTE'"));
-        rules.add(new Rule("E'","+","E'¡ú+TE'"));
-        rules.add(new Rule("E'",")","E'¡ú¦Å"));
-        rules.add(new Rule("E'","#","E'¡ú¦Å"));
-        rules.add(new Rule("T","i","T¡úFT'"));
-        rules.add(new Rule("T","(","T¡úFT'"));
-        rules.add(new Rule("T'","+","T'¡ú¦Å"));
-        rules.add(new Rule("T'","*","T'¡ú*FT'"));
-        rules.add(new Rule("T'",")","T'¡ú¦Å"));
-        rules.add(new Rule("T'","#","T'¡ú¦Å"));
-        rules.add(new Rule("F","i","F¡úi"));
-        rules.add(new Rule("F","(","F¡ú(E)"));
+        rules.add(new Rule("E","i","E\u2192TG"));
+        rules.add(new Rule("E","(","E\u2192TG"));
+        rules.add(new Rule("G","+","G\u2192+TG"));
+        rules.add(new Rule("G",")","G\u2192\u03b5"));
+        rules.add(new Rule("G","#","G\u2192\u03b5"));
+        rules.add(new Rule("T","i","T\u2192FH"));
+        rules.add(new Rule("T","(","T\u2192FH"));
+        rules.add(new Rule("H","+","H\u2192\u03b5"));
+        rules.add(new Rule("H","*","H\u2192*FH"));
+        rules.add(new Rule("H",")","H\u2192\u03b5"));
+        rules.add(new Rule("H","#","H\u2192\u03b5"));
+        rules.add(new Rule("F","i","F\u2192i"));
+        rules.add(new Rule("F","(","F\u2192(E)"));
         return rules;
     }
 }
