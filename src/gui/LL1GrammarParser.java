@@ -7,15 +7,27 @@ import javax.swing.*;
  */
 public class LL1GrammarParser{
     private JTextField textField1;
-    private JButton 开始解析Button;
+    private JButton Button;
     private JTextArea textArea1;
     private JPanel LL1GrammarParser;
 
+    public LL1GrammarParser() {
+        Button.addActionListener(e -> {
+            System.out.print("clicked");
+        });
+    }
+
     public static void main(String[] args) {
+        try{
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         JFrame frame = new JFrame("LL1GrammarParser");
         frame.setContentPane(new LL1GrammarParser().LL1GrammarParser);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.pack();
+        frame.setSize(1280,720);
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 }
